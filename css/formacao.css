@@ -1,0 +1,274 @@
+#proj h2, h3, h4, h5 {
+    margin: 0; 
+}
+
+.projetos-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: end;
+    gap: 10px;
+    background-color: rgba(3, 8, 6, 0.945);
+    margin: 0px;
+    padding: 0px;
+    color: #d8f0e5f1;
+}
+
+.projetos-lateral h2 {
+    margin: 0px;
+    color: rgba(22, 119, 22, 0.11);
+}
+
+.projetos-restante {
+    grid-column: 2; 
+    max-width: 200px;
+}
+.rbtech {
+    justify-content: start;
+}
+
+.projetos-lateral {
+    font-size: 4.5em;
+    word-break: break-all;
+    width: 5ch;
+    justify-self: center;
+    
+}
+
+.proj-resumo {
+    display: block;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+.proj-resumo h2 {
+    font-size: 2em;
+    padding-top: 20px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+
+}
+
+.proj-resumo p {
+    font-size: 1.2em;
+    padding-bottom: 40px;
+    margin-top: 80px;
+}
+
+.proj-grupos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    max-width: 600px;
+  
+    
+}
+.proj-grupos li {
+    padding: 8px;
+  
+}
+
+.proj-grupos ul {
+    background: rgb(5, 5, 5);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 150px;
+}
+
+.proj-grupos ul:last-child{
+    margin-right: 10px;
+}
+
+.proj-grupos li:nth-child(even){
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.proj-grupos li:nth-child(odd){
+    font-size: 0.7em;
+}
+
+.proj-grupos ul::before {
+    content: " ";
+    height: 40px;
+    width: 4px;
+    background: linear-gradient(rgb(46, 75, 71),  rgb(120, 158, 170) , rgb(4, 31, 39), rgb(3, 37, 32));
+    position: absolute;
+    margin-left: -74px;
+    border-radius: 8px 2px 2px 8px;   
+}
+
+.skils {
+    margin-top: 30px;
+    padding-top: 10px;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.skils img {
+    width: 20px;
+    height: auto;
+    color: black;
+    align-items: center;
+}
+.skils h4 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    padding-bottom: 12px;
+}
+
+.skils h5 {
+    padding-bottom: 8px;
+    font-size: 1.2em;
+    padding-left: 32px;
+}
+
+.skils h5:nth-child(3) {
+    padding-bottom: 26px;
+}
+
+.ingles {
+    color: rgb(180, 185, 214);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+
+    .projetos-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr ; 
+    }
+
+    .projetos-lateral {
+        
+        display: block;
+        font-size: 4.3rem;
+        word-break: normal;
+        padding-top: 0;
+        text-align: start;
+        width: auto;
+        align-self: center;
+       
+        
+    }
+    .projetos-lateral h2{
+        color: rgb(208, 223, 238);
+        font-size: 50px;
+        word-break: break-all;
+        width: 1ch;
+
+    }
+
+    .proj-resumo p {
+        font-size: 17px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        line-height: 1.2; 
+
+    }
+
+    .proj-resumo {
+        max-width: none;
+        text-align: center;
+        padding: 30px 60px;
+
+    }
+    .proj-grupos ul {
+        font-size: 11px;
+        max-width: 120px;
+        width: 100px;
+        height: auto;
+        
+        
+    }
+    .proj-grupos li {
+        font-size: 10px;
+    }
+    .proj-grupos {
+        max-width: none;
+        justify-items: center;
+        grid-template-columns: 200px 20px 200px;
+        align-items: center;
+        justify-content: center;
+    }
+    .skils {
+        display: block;
+        text-align: center;
+        
+    }
+    .skils h5:nth-child(3) {
+        font-size: 12px;
+        padding-bottom: 40px;
+        
+    }
+   .skils h4 {
+        font-size: 14px;
+    }
+
+   .skils h5 {
+        font-size: 12px;
+    }
+    .proj-grupos ul::before {
+        margin-right: 0px;
+        margin-left: -49px;
+
+    }
+    .proj-grupos ul:last-child {
+        margin: 0px;
+}
+}
+
+@media (max-width: 600px) {
+    .projetos-lateral h2{ 
+        font-size: 32px;
+    
+    }
+    .proj-resumo p {
+        font-size: 12px;
+        margin-top: 8px;
+        padding-bottom: 8px;
+        line-height: 1.2; 
+
+    }
+    .proj-resumo {
+        padding: 12px 28px;
+    }
+    .proj-grupos li {
+        font-size: 8.5px;
+    }
+    .skils h4 {
+        font-size: 11px;
+    }
+    .skils h5 {
+        font-size: 10px;
+    }
+    .skils h5:nth-child(3) {
+        font-size: 10px;
+        padding-bottom: 18px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    
+    .projetos-container {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+    .projetos-lateral h2{ 
+        display: flex;
+        padding-top: 20px;
+        word-break: normal;
+        justify-content: center;
+    
+    }
+
+} 

@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+}
+
+article{
+    margin: 40px;
+    max-width: 1200px;
+    font-family: 'Fira Code', monospace;
+}
+
+h1,nav, ul, li, h3, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    background: rgb(4, 7, 48);
+    padding: 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.cerebro {
+    width: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+   
+}
+
+.titulo-foto{
+    font-size: 1.8em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 40px 10px 40px;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    
+}
+
+.titulo-foto .cerebro{
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.titulo-foto .brasil {
+    width: 16px;
+    height: auto;
+
+}
+
+.titulo-foto h1{
+    grid-column: 2;
+    border-radius: 4px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.residencia {
+    font-size: 1rem;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+
+.menu-lista ul {
+    list-style: none;
+    display: flex;
+    /* background: linear-gradient(black, rgb(111, 56, 143)) ; */
+    padding-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    padding-top: 30px;
+    
+}
+
+.menu li:last-child {
+    padding-right: 20px;
+}
+.cerebro {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(230, 224, 224),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.7);
+}
+ 
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-between ;
+    padding-bottom: 1px;
+   
+    /* background: linear-gradient(rgba(197, 233, 193, 0.911),rgb(31, 100, 10), rgb(4, 36, 1)); */
+  
+}
+.logo h3 {
+    grid-row: 1;
+}
+
+.lari {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    height: auto;
+    width: auto;
+    display: block;
+    grid-row: 1;
+
+}
+
+
+@keyframes anim-stars {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+.cerebro {
+	
+	animation: anim-stars 2s alternate infinite;
+}
+
+.lari {
+    /* transform: rotate(-20deg); */
+}
+
+@media (max-width: 1000px) {
+    .titulo-foto {
+        padding: 40px 30px 0px 30px;
+        gap: 2px;
+    }
+    
+    .dev {
+        padding-left: 8px;
+        font-size: 1.9rem;
+        text-align: center;
+        height: auto;
+    }
+    .residencia {
+        font-size: 0.6em;
+    }
+    .cerebro {
+        width: 90px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .menu-lista li a { 
+        font-size: 0.7em;
+    }
+    
+}
+
+
+
+@media (max-width: 900px){
+    .dev {
+        padding: 10px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .cerebro {
+        width: 160px ;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .lari {
+        font-size: 1rem;
+        text-transform: uppercase;
+        padding: 10px;
+       
+    }
+    
+    .logo nav{
+        padding-top: 20px;
+        
+     
+    }
+    .menu {
+        justify-content: center;
+    }
+    
+    .log {
+        flex-direction: column;
+    }
+    
+    article{
+        margin: 20px;
+    }
+
+}
+
+@media (max-width: 680px) {
+    .titulo-foto {
+        padding: 20px;
+        gap: 2px;
+    }
+    
+    .dev {
+        padding-left: 8px;
+        font-size: 1.3rem;
+        text-align: center;
+        height: auto;
+    }
+    .residencia {
+        font-size: 0.6em;
+    }
+    .cerebro {
+        width: 90px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .menu ul{
+        gap: 10px;
+       
+    }
+    .logo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+       
+    }
+    .logo nav {
+        padding: 2px;
+        font-size: 0.9rem ;
+    }
+    .lari {
+        align-self: center;
+        padding: 30px 0px 0px 0px;
+      
+    }
+   
+    }
+
+    @media (max-width: 400px) {
+        .titulo-foto h1 {
+            padding-left: 8px;
+            font-size: 10px;
+            text-align: center;
+        }
+    
+        .titulo-foto h1 {
+            font-size: 0.5em;
+        }
+        .residencia {
+            font-size: 0.8em;
+        }
+        .cerebro {
+            width: 70px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+    .titulo-foto .brasil {
+        width: 10px;
+        }
+}
+    

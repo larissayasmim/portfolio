@@ -1,0 +1,328 @@
+
+.subtitulo {
+    margin: 0px;
+}
+
+#curso-habilidades {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;  
+}
+
+#curso-habilidades li {
+    list-style: none;
+    justify-content: center;
+
+    
+}
+
+.section-cursos {
+    max-width: 1200px;
+    padding: 20px 40px 40px 40px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+.subtitulo{
+    display: block;
+    color:  rgb(14, 27, 27, 0.3);
+    grid-row: 1/-1;
+    padding-top: 40px;
+    
+}
+
+.section-cursos h2 {
+    font-size: 6rem;
+    text-align: center;
+    grid-row: 1/-1;
+    word-break: break-all;
+    max-width: 3ch;
+    
+}
+
+
+.cursos {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column: 2;
+    align-items: center;
+    align-self: center;
+    position: relative;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    max-width: auto;
+    height: auto;
+    font-size: 9px;
+    word-wrap: break-word;
+    max-width: 550px;
+    
+ 
+}
+
+.cursos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* 
+.cursos:nth-child(even) {
+    background: #0002020e;
+    color: #ffffff;
+}
+
+.cursos:nth-child(odd) {
+    background: #124e4e13;
+    color: black;
+    font-weight: 900;  
+} */
+
+.cursos::before {
+    content: " ";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(rgb(16, 31, 30), rgb(50, 185, 156));
+    position: absolute;
+    left: -4px;
+    align-self: flex-start;
+    margin-top: 20px;
+    border-radius: 2px 20px 20px 2px;
+     
+}
+
+.ano {
+    position: absolute;
+    top: 20px;
+    left: -50px;
+    font-weight: 700;
+    display: flex;
+}
+
+.fornecedor {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.resumo-cursos p {
+    display: block;
+    /* padding-left: 2px; */
+    margin-right: 60px;
+    line-height: 1.4;
+    padding-bottom: 6px;
+    padding-top: 6px; 
+    font-size: 1.3em;
+    font-weight: 300;
+ 
+}
+#paragrafo {
+    padding-bottom: 40px;
+    padding-top: 58px;
+    word-break: 30ch;
+    text-align: start;
+}
+
+
+.nome-curso {
+    font-weight: 600;
+    font-size: 12px;
+    padding-left: 16px;
+  
+}
+
+#curso-habilidades li {
+    display: flex;
+    background: #07070893;
+    color: aliceblue;
+    font-weight: 600;
+    padding: 4px 25px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.resumo {
+    max-width: 70ch;
+    font-size: 1px;
+
+}
+
+
+
+@media(max-width:1000px) {
+    .section-cursos h2 {
+        font-size: 4.3rem;
+        max-width: 3ch;
+        padding-top: 0;
+        
+    }
+    .section-cursos {
+        padding-top: 0px;
+        text-align: start;
+    }
+    #paragrafo {
+        padding-top: 0;
+        font-size: 1em;
+    }
+    .resumo-cursos p {
+        font-size: 1.2em;
+    }
+    .fornecedor {
+        font-size: 1.3em;
+    }
+    .nome-curso {
+        font-size: 1em;
+    }
+
+    #curso-habilidades li {
+        padding: 4px;
+        font-size: 8.5px;
+    }
+    .resumo-cursos p {
+        margin-right: 10px;
+    }
+}
+
+
+@media(max-width:800px) {
+
+    .subtitulo  {
+    font-size: 4rem;
+    word-break: break-all ;
+    max-width: 6ch;
+    color: rgba(0, 0, 0, 0.568);
+       
+    }
+    .cursos {
+        grid-column: 1/-1;
+    }
+    .resumo-cursos p {
+        font-size: 20px;
+    }
+    .ano {
+    position: absolute;
+    top: -20px;
+    left: 250px;
+    font-weight: 700;
+    display: flex;
+    }
+    .resumo-cursos p {
+        font-size: 1.15em;
+        line-height: 1.5;
+        margin-right: 9px;
+    }
+   
+    .section-cursos h2 {
+        font-size: 3.8rem;
+        
+    }
+}
+
+@media(max-width:600px) {
+    .section-cursos h2 {
+       font-size: 20px;
+       word-break: normal;
+       grid-row: 1/-1;
+       justify-self: start;
+       padding: 10px;
+}
+
+    .resumo-cursos {
+        font-size: 14px;
+        grid-column: 1/-1;
+        max-width: 100%;
+}
+    .resumo-cursos p {
+        font-size: 1em;
+}
+
+    .section-cursos {
+        gap: 10px; 
+}
+    .cursos {
+        padding: 5px 20px 5px 20px;
+        max-width: 100ch;
+        margin-bottom: 30px;  
+}
+}
+
+@media(max-width:500px) {
+    .subtitulo  {
+       font-size: 18px;
+       word-break: normal;
+       grid-column: 1/-1;
+       justify-self: start;
+       padding: 10px;
+    }
+    .cursos h3{
+        font-size: 12px;
+
+    }
+    .cursos {
+        grid-template-columns: 1fr;
+        font-size: 15px;
+        grid-column: 1/-1;
+        max-width: 100%;
+    }
+    .resumo-cursos p {
+        padding: 10px 10px 10px 10px;
+        font-size: 10px;
+    }
+
+    .section-cursos {
+        gap: 5px;
+    
+    }
+    .cursos::before {
+        
+        width: 3px;
+        height: 10px;
+        
+    }
+    .ano {
+        position: absolute;
+        top: 20px;
+        left: 150px;
+        font-weight: 700;
+        display: flex;
+    }
+    .logo {
+        padding-bottom: 10px;
+    }
+    .cursos {
+        padding: 5px 20px 5px 20px;
+        max-width: 100ch;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .ano {
+        display: none;
+    }
+
+    .cursos::after {
+        content: "2022";
+        font-weight: 600;
+        font-size: 9px;   
+    }
+    .nome-curso {
+        font-size: 9px;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .fornecedor {
+        padding-top: 10px;
+    }   
+
+}
+
+@media (min-width:500px){
+    .ano {
+        color: black;
+    }
+}
