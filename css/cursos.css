@@ -71,17 +71,19 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-/* 
-.cursos:nth-child(even) {
-    background: #0002020e;
-    color: #ffffff;
+ 
+ .cursos:nth-child(even) { 
+    background: #f7f7f7f6;
+    color: #000000;
+    font-weight: bold;
+    
 }
 
 .cursos:nth-child(odd) {
-    background: #124e4e13;
+    background: #ffffffbe;
     color: black;
-    font-weight: 900;  
-} */
+    font-weight: 700;  
+} 
 
 .cursos::before {
     content: " ";
