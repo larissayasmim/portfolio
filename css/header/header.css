@@ -17,11 +17,13 @@ h1,nav, ul, li, h3, p{
 
 .link {
     text-decoration: none;
-    color: rgb(236, 230, 230);
-    background: rgb(4, 7, 48);
+    color: rgb(4, 7, 48);
+    font-weight: 600;
     padding: 8px;
-    border-radius: 6px;
     text-transform: uppercase;
+}
+.link:hover{
+    border-bottom: 2px solid rgb(4, 7, 48);
 }
 
 .cerebro {

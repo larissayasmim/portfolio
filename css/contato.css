@@ -57,4 +57,11 @@
         width: 14px;
     }
 }
-
+@media (max-width: 500px) {
+    .contato-bloco h3 {
+        font-size: 0.6em;
+}
+.contato-bloco p {
+    font-size: 0.8em;
+    padding-left: 20px;
+}
