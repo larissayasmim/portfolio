@@ -5,7 +5,7 @@
 <br>
 <h2 align="center"> 
 
- Projeto Portfolio 
+ Project Portfolio 
 
 </h2>
 <h4 align="center">Interface developed with HTML, CSS e JavaScript</h4>
