@@ -1,6 +1,6 @@
 
 <p align= "center">
-<img width="500" src="https://res.cloudinary.com/dxijjbby3/image/upload/v1666390820/portfolio/f77718747d94a2eaf96bced9c5fba023_lld5qt.png">
+<img width="500" height="auto" src="https://res.cloudinary.com/dxijjbby3/image/upload/v1666390820/portfolio/f77718747d94a2eaf96bced9c5fba023_lld5qt.png">
 </p>
 <br>
 <h2 align="center"> 
@@ -20,6 +20,6 @@
 
 </p>
 
-<h2> <img width="30" src="https://res.cloudinary.com/dxijjbby3/image/upload/v1666393600/portfolio/iconmonstr-marketing-4-240_1_xxscmt.png"> Demonstration </h2>
+<h2> <img width="22" height="auto" src="https://res.cloudinary.com/dxijjbby3/image/upload/v1666393600/portfolio/iconmonstr-marketing-4-240_1_xxscmt.png"> &nbsp;Demonstration </h2>
 
 <p> https://portfolio-desenvolvedoraly.netlify.app/ </p>
