@@ -1,3 +1,10 @@
+a {
+    text-decoration: none;
+    color: rgba(205, 224, 233, 0.822);
+    font-family: 'Fira Code', 'monospace';
+    font-size: 1.1em;
+}
+
 .contato-bloco {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -17,6 +24,8 @@
     font-size: 1.6em;
     padding-right: 30px;
     text-align: center;
+    font-family: 'Fira Code', 'monospace';
+
   
 }
 .contato-bloco p {
@@ -29,6 +38,14 @@
     width: 26px;
     height: auto;
 }
+
+
+
+
+
+
+
+
 
 @media (max-width: 1000px) {
     .contato-bloco h3 {
@@ -43,25 +60,92 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 680px) {
     .contato-bloco h3 {
-        font-size: 0.9em;
+        font-size: 0.7em;
         padding-bottom: 3px;
         padding-right: 20px;
     }
+.contato-bloco h3:first-child{
+    font-size: 0.5em;
+}
+
     .contato-bloco p {
         font-size: 0.9em;
         padding-left: 20px;
     }
     .contato-bloco img {
-        width: 14px;
+        width: 12px;
+    }
+    .contato-bloco {
+        padding-bottom: 10px;
+        padding-top: 16px;
+        height: 100px;
+        gap:10px;
+        width: 100%;
+       
     }
 }
 @media (max-width: 500px) {
+    .contato-bloco {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        height: 80px;
+        gap:10px;
+        width: 100%;
+       
+    }
+
     .contato-bloco h3 {
-        font-size: 0.6em;
+        font-size: 0.4em;
+        padding-right: 0px;
+        display:block;
+       width: auto;
+        margin:0px;
 }
-.contato-bloco p {
-    font-size: 0.8em;
-    padding-left: 20px;
+    .contato-bloco h3:first-child {
+    font-size: 5px;
+}
+    .contato-bloco p {
+    font-size: 0.5em;
+    padding-left: 10px;
+}
+
+    .contato-bloco img {
+        width: 6px;
+    }
+
+    .contatos {
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width: 540px) {
+    .contato-bloco {
+        padding-top: 20px;
+    }
+    .contato-bloco p {
+        font-size: 0.8em;
+    }
+
+}
+@media (max-width: 400px) {
+    .contato-bloco {
+        padding-top: 10px;
+    }
+    .contato-bloco p {
+        font-size: 0.6em;
+    }
+
+}
+
+@media (max-width: 300px) {
+    .contato-bloco {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .contato-bloco p {
+        font-size: 0.4em;
+    }
+
 }

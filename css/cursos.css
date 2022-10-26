@@ -255,7 +255,7 @@
 
 @media(max-width:500px) {
     .subtitulo  {
-       font-size: 18px;
+       font-size: 16px;
        word-break: normal;
        grid-column: 1/-1;
        justify-self: start;
@@ -320,11 +320,36 @@
     .fornecedor {
         padding-top: 10px;
     }   
-
+    #paragrafo {
+        font-size: 0.6em;
+        padding-bottom: 20px;
+    }
+    .section-cursos h2{
+        font-size: 12px;
+    }
 }
 
 @media (min-width:500px){
     .ano {
         color: black;
+    }
+}
+
+@media(max-width: 400px){
+    .cursos h3{
+        font-size: 9px;
+    }
+    .nome-curso {
+        font-size: 6px;
+    }
+    .resumo-cursos p {
+        font-size: 5.5px;
+    }
+    #curso-habilidades li{
+        font-size: 4.5px;
+        padding: 3px;
+    }
+    .cursos::after {
+        font-size: 5px;
     }
 }

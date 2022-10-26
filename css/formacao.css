@@ -1,4 +1,4 @@
-#proj h2, h3, h4, h5 {
+#proj h2, h3, h4, h5, span{
     margin: 0; 
 }
 
@@ -95,7 +95,7 @@
     background: linear-gradient(rgb(46, 75, 71),  rgb(120, 158, 170) , rgb(4, 31, 39), rgb(3, 37, 32));
     position: absolute;
     margin-left: -74px;
-    border-radius: 8px 2px 2px 8px;   
+    border-radius: 8px 1px 1px 8px;   
 }
 
 .skils {
@@ -159,10 +159,10 @@
         
     }
     .projetos-lateral h2{
-        color: rgb(208, 223, 238);
         font-size: 50px;
         word-break: break-all;
-        width: 1ch;
+        width: 3ch;
+        line-height: 90px;
 
     }
 
@@ -231,7 +231,7 @@
     
     }
     .proj-resumo p {
-        font-size: 12px;
+        font-size: 10px;
         margin-top: 8px;
         padding-bottom: 8px;
         line-height: 1.2; 
@@ -257,7 +257,7 @@
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
     
     .projetos-container {
         display: grid;
@@ -265,10 +265,118 @@
     }
     .projetos-lateral h2{ 
         display: flex;
-        padding-top: 20px;
+        padding-top: 30px;
+        padding-bottom: 10px;
         word-break: normal;
         justify-content: center;
+        color: rgba(247, 252, 247, 0.733);
+        line-height: 0;
+        
     
     }
+    .proj-resumo p {
+        font-size: 9px;
+        padding:0px 0px;
+    }
+    .proj-grupos li {
+        padding: 3px;
 
+    }
+    .proj-grupos ul::before {
+        height: 16px;
+        width:3px;
+        margin-top:2px;
+        margin-left: -44px;
+   } 
+   .proj-grupos ul {
+    width: 90px;
+   }
+   .skils h5 {
+    padding-left: 0px;
+   }
+   .proj-resumo{
+    padding: 0px 28px 28px 28px;
+    
+   }
 } 
+
+@media (max-width: 440px) {
+    .proj-resumo p{
+        padding: 6px;
+        align-content: center;
+        margin: 0;
+    }
+    .proj-resumo {
+        padding: 4px;
+        margin: 0;
+        width: auto;
+        display:block;
+       
+    }
+    section {
+        width: auto;
+
+    }
+    .projetos-container {
+        width: auto;
+    }
+    .proj-grupos ul {
+        width: 76px;
+        margin-right: 4px;
+        
+       }
+       .proj-grupos ul::before {
+        height: 16px;
+        width:3px;
+        margin-top:6px;
+        margin-left: -37px;
+   } 
+   
+}    
+
+@media (max-width: 400px) {
+    /* .skils {
+        padding-right: 40px;
+    }
+    .proj-grupos li{
+        padding:0;
+        font-size: 6px;
+    } */
+   
+    .proj-grupos ul::before {
+     height: 12px;
+     width:2px;
+        margin-top:4px;
+        margin-right: 2px;
+} 
+    .proj-grupos {
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .proj-grupos li {
+        padding: 2px;
+        font-size: 7px;
+    }
+    .proj-grupos li:nth-child(odd){
+        font-size: 0.5em;
+    }
+
+    .projetos-lateral h2{
+        font-size: 16px;
+    }
+.skils {
+     margin-top: 16px;
+     margin-bottom: 4px;
+}
+    .skils img {
+        width: 10px;
+    }
+    .skils h5 {
+        font-size: 8px;
+        padding-left: 0px;
+        max-width: 100%;
+    }
+
+
+}    

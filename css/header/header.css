@@ -9,7 +9,7 @@ article{
     font-family: 'Fira Code', monospace;
 }
 
-h1,nav, ul, li, h3, p{
+h1,nav, ul, li, h3, p, span{
     margin: 0px;
     padding: 0px;
     list-style: none;
