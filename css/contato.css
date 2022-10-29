@@ -21,7 +21,7 @@ a {
     margin: 0px;
     grid-column: 2; 
     padding-bottom: 4px; 
-    padding-right: 30px;
+
     text-align: center;
     font-family: 'Fira Code', 'monospace';
 }
@@ -29,10 +29,10 @@ a {
     font-size: 16px;
 }
 .contato-bloco p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.5;
     word-break: 40ch;
-    padding-left: 60px;
+    text-align: center;
 }
 .contato-bloco img {
     width: 20px;
@@ -49,74 +49,79 @@ a {
 
 @media (max-width: 1000px) {
     .contato-bloco h3 {
-        font-size: 1.1em;
+        font-size: 1em;
         padding-bottom: 2px;
     }
-    .contato-bloco p {
-        font-size: 1.1em;
-    }
+    
     .contato-bloco img {
         width: 14px;
     }
+    .linkedin{
+        font-size: 1em;
+    }
+    .contato-bloco p{
+        display: block;
+        justify-self: center;
+        max-width: 50ch;
+        font-size: 1em;
+    }
 }
 
-@media (max-width: 680px) {
+
+
+
+@media (max-width: 750px) {
     .contato-bloco h3 {
         font-size: 0.7em;
         padding-bottom: 3px;
-        padding-right: 20px;
     }
     .contato-bloco h3:first-child{
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
     .contato-bloco h3:last-child{
         font-size: 10px;
     }
 
     .contato-bloco p {
-        font-size: 0.9em;
-        padding-left: 20px;
+        font-size: 0.7em;
+        text-align: center;
     }
     .contato-bloco img {
         width: 10px;
     }
-    .contato-bloco {
-        padding-bottom: 10px;
-        padding-top: 16px;
+    .contato-bloco {;
         height: 100px;
-        gap:10px;
         width: 100%;
        
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .contato-bloco {
         padding-bottom: 10px;
         padding-top: 10px;
         height: 80px;
         gap:10px;
-        width: 100%;
-       
+        width: 100%;   
     }
 
     .contato-bloco h3 {
-        font-size: 0.4em;
+        font-size: 0.5em;
         padding-right: 0px;
-        padding-bottom: 6px;
+        padding-bottom: 2.5px;
         display:block;
         width: auto;
         margin:0px;
 }
     .contato-bloco h3:first-child {
-    font-size: 5px;
+    font-size: 0.5em;
 }
-.contato-bloco h3:last-child{
-    font-size: 8px;
+    .contato-bloco h3:last-child{
+    font-size: 0.5em;
 }
 
     .contato-bloco p {
-    font-size: 0.5em;
-    padding-left: 10px;
+    font-size: 0.6em;
+    
 }
 
     .contato-bloco img {
@@ -127,16 +132,22 @@ a {
         display: block;
         text-align: center;
     }
-}
-@media (max-width: 540px) {
-    .contato-bloco {
-        padding-top: 20px;
+    h3 a {
+        font-size: 6px;
+
     }
-    .contato-bloco p {
-        font-size: 0.8em;
+    .contato-bloco {
+        padding-top: 10px;
     }
 
 }
+@media (max-width: 450px) {
+   .contato-bloco p{
+
+    width: 30ch;
+   }
+}
+
 @media (max-width: 400px) {
     .contato-bloco {
         padding-top: 10px;

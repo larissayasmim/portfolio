@@ -62,6 +62,7 @@ h1,nav, ul, li, h3, p, span{
     border-radius: 4px;
     padding: 20px;
     text-transform: uppercase;
+    color: rgb(10, 71, 45);
 }
 
 .residencia {

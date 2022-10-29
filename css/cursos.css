@@ -23,7 +23,7 @@
 .section-cursos {
     max-width: 1200px;
     padding: 20px 40px 40px 40px;
-    margin: 0 auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 40px;
@@ -231,7 +231,8 @@
        word-break: normal;
        grid-row: 1/-1;
        justify-self: start;
-       padding: 10px;
+       padding: 0px;
+       
 }
 
     .resumo-cursos {
@@ -251,6 +252,8 @@
         max-width: 100ch;
         margin-bottom: 30px;  
 }
+
+
 }
 
 @media(max-width:500px) {
@@ -259,10 +262,11 @@
        word-break: normal;
        grid-column: 1/-1;
        justify-self: start;
-       padding: 10px;
+    
     }
     .cursos h3{
         font-size: 12px;
+        
 
     }
     .cursos {
@@ -272,7 +276,7 @@
         max-width: 100%;
     }
     .resumo-cursos p {
-        padding: 10px 10px 10px 10px;
+        padding: 0px;
         font-size: 10px;
     }
 
@@ -324,8 +328,15 @@
         font-size: 0.6em;
         padding-bottom: 20px;
     }
-    .section-cursos h2{
+    .section-cursos h2 {
         font-size: 12px;
+
+    }
+    #curso-habilidades  {
+        padding-top: 16px;
+    }
+    .cursos::after {
+        margin-top: 8px;
     }
 }
 
@@ -344,6 +355,7 @@
     }
     .resumo-cursos p {
         font-size: 5.5px;
+
     }
     #curso-habilidades li{
         font-size: 4.5px;
@@ -352,4 +364,8 @@
     .cursos::after {
         font-size: 5px;
     }
+    #curso-habilidades  {
+        padding-top: 14px;   
+}
+   
 }
