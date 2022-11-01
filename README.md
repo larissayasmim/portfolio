@@ -8,7 +8,7 @@
  Project Portfolio 
 
 </h2>
-<h4 align="center">Interface developed with HTML, CSS e JavaScript</h4>
+<h4 align="center">Interface developed with HTML e CSS</h4>
 <br>
 
 <p align="center">
